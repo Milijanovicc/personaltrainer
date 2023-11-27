@@ -1,64 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Odibee+Sans&display=swap');
 *{
 	margin:0px;
 	padding:0px;
+	font-family: 'Odibee Sans', sans-serif;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+#wrap{
+	width: 100%;
+	position: relative;
+}
+#wrap-head{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
 }
 #header{
-	/* background-color:blue; */
-	background-image:url("../header.png");
-	width:100%;
-	height:100px;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	margin:0px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-image: linear-gradient(rgba(73, 73, 73, 0.95),rgba(65, 58, 46, 0.8));
 }
-.logo{
-	/* background-image: linear-gradient(to right,rgba(0,0,255,0.3),white 30%,rgba(0,0,255,0.3),rgba(0,0,255,0.7),darkblue); */
-	/* background-image: radial-gradient(white,white,white,lightblue,blue,blue); */
-	/* background-image: radial-gradient(white, lightblue, blue); */
-	/* margin-left:280px; */
-	/* margin-top:12px; */
-	height:100%;
-	width:39%;
-	float:left;
+#logo{
+	width: 200px;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-.logo img{
-	margin-left:280px;
-	margin-top:12px;
-	/* margin:5px 5px; */
-	width:220px;
+#nav ul li{
+	display: inline;
 }
-.meni{
-	/* background-color:blue; */
-	margin-left:0px;
-	height:100%;
-	width:39%;
-	float:right;
+#nav ul li a{
+	padding: 8px 25px;
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+	transition: 0.8s color;
+	border: 2px solid rgba(0, 0, 0, 0);
 }
-#list{
-	padding-top:37px;
-	height:60%;
+#nav ul li a:hover{
+	color: rgb(0, 0, 0);
+	background-image: linear-gradient(rgb(63, 63, 63),rgb(233, 155, 37));
+	border: 2px solid rgb(27, 27, 27);
 }
-.meni li{
-	margin:auto;
-	width: 20%;
-	margin-left:20px;
-	display:inline;
+#background{
+	width: 100%;
+	height: 920px;
+	background-image: url(../assets/background.png);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
 }
-.meni ul li a{
-	padding:0 20px;
-	border-left:2px solid rgba(0,0,100,0.9);
-	border-right:1px solid rgba(0,0,100,0.9);
-	font-family: 'Archivo', sans-serif;
-	font-size:21px;
-	text-decoration:none;
-	color:white;
+#content-main{
+	display: flex;
+	align-items: center;
+	width: 90%;
+	height: 500px;
 }
-.cleaner{
-	clear:both;
+#main{
+	width: 50%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 59px;
+    margin-top: 300px;
 }
-#wrap1{
-	width:100%;
+#main h1,span{
+	display: block;
+	width:max-content;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 50px;
+	color:rgb(255, 255, 255);
+	margin-bottom: 15px;
+	font-weight: bold;
 }
-#wrapRest{
-	height:900px;
-	/* background-color:rgba(0,0,0,0.2) */
+#main button a{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 27px;
+	transition:all .3s ;
 }
+#main button{
+	padding:10px 18px;
+	background-image: linear-gradient(rgb(133, 133, 133),rgb(53, 53, 53));
+	border: 2px solid rgb(66, 66, 66);
+	border-radius: 15px;
+	transition:all 0.5s;
+}
+#main button:hover{
+	background-image: linear-gradient(rgb(53, 53, 53),rgb(233, 155, 37));
+	border: 2px solid rgb(27, 27, 27);
+	cursor: pointer;
+}
+#main button a:hover{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 27px;
+	color: black;
+}
+#offer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 800px;
+	flex-direction: column;
+}
+#offer h2{
+	font-size: 60px;
+}
+#offers{
+	width: 80%;
+	height: 600px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.offer{
+	/* background-image: radial-gradient(rgb(255, 255, 255),rgb(233, 155, 37),rgb(255,255,255)); */
+	box-shadow: 0 0 13px 0 rgba(0,0,0,0.7);
+	border:1px solid grey;
+	border-radius: 20px 60px;
+	text-align: center;
+	font-size: 34px;
+	padding:10px 25px;
+	width: 600px;
+	height: 450px;
+	z-index: 2;
+}
+
+.offer h3{
+	text-shadow: 2px 1px rgb(100, 100, 100);
+	font-size: 45px;
+}
+.food{
+	position: relative;
+	border: 1px solid grey;
+	box-shadow: 0 0 2px 0 black;
+	border-radius: 150px;
+	width: 300px;
+	height: 300px;
+	background-image: url(../assets/food2.jpg);
+	background-repeat:no-repeat;
+	background-size: 500px;
+	background-position:-135px;
+	margin-top: 30px;
+}
+.food2{
+	background-image: url(../assets/gym.jpg);
+	background-size: 314px;
+	background-position:-5px;
+}
+.offer-wrap{
+	display: flex;
+	justify-content: space-between;
+}
+.offer-wrap p{
+	margin-top: 100px;
+	width: 50%;
+}
+
