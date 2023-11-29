@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Odibee+Sans&display=swap');
 :root{
-	--primary:rgba(6, 143, 255, 0.89);
-	--secondary:
+	--primary:rgba(250, 214, 67,0.88);
+	--bckgrd:rgba(180, 180, 180, 0.33)
 }
 *{
 	margin:0px;
@@ -34,8 +34,8 @@ a{
 	justify-content: space-around;
 	/* background-image: linear-gradient(#EEEEEE,#4E4FEB); */
 	z-index: 20;
-	background-image: linear-gradient(rgba(6, 143, 255, 0.89),rgba(6, 143, 255, 0.99));
-	box-shadow: 0px 3px rgb(0, 61, 110);
+	background-image: linear-gradient(rgba(128, 128, 128, 0.849),rgba(211, 211, 211, 0.699));
+	box-shadow: 0px 2px 5px #1b1b1b;
 }
 #logo{
 	width: 200px;
@@ -56,8 +56,10 @@ nav ul li a{
 }
 nav ul li a:hover{
 	color: rgb(0, 0, 0);
-	background-image: linear-gradient(#068FFF,#EEEEEE);
-	border: 2px solid rgb(27, 27, 27);
+	background-color:rgba(250, 213, 67, 0.637);
+	border: 2px solid rgb(87, 87, 87);
+	box-shadow: 0px 0px 5px grey;
+	border-radius: 9px;
 }
 #background{
 	width: 100%;
@@ -72,7 +74,7 @@ nav ul li a:hover{
 	display: flex;
 	align-items: center;
 	width: 90%;
-	height: 500px;
+	height: 100%;
 }
 #main{
 	width: 50%;
@@ -82,8 +84,9 @@ nav ul li a:hover{
 	align-items: center;
 	justify-content: center;
 	margin-left: 75px;
-    margin-top: 300px;
+    /* margin-top: 300px; */
 }
+
 #main h1,span{
 	display: block;
 	width:max-content;
@@ -94,32 +97,37 @@ nav ul li a:hover{
 	margin-bottom: 15px;
 	font-weight: bold;
 }
-#main button a{
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 27px;
-	transition:all .3s ;
+#main h1{
+	color: var(--primary);
 }
-#main button{
-	padding:10px 18px;
-	background-image: linear-gradient(#4E4FEB,rgb(53, 53, 53));
-	border: 2px solid rgb(66, 66, 66);
+#main a{
+	text-transform: uppercase;
+	/* font-weight: bold; */
+	font-size: 27px;
 	border-radius: 15px;
+	transition:all .3s ;
+	padding:10px 18px;
+	background-color: var(--bckgrd);
+	border: 2px solid rgb(66, 66, 66);
 	transition:all 0.5s;
 }
-#main button:hover{
-	background-image: linear-gradient(#EEEEEE,#4E4FEB);
+#main a:hover{
+	background-color: var(--primary);
 	border: 2px solid rgb(27, 27, 27);
 	cursor: pointer;
-}
-#main button a:hover{
 	text-transform: uppercase;
-	font-weight: bold;
+	/* font-weight: bold; */
 	font-size: 27px;
 	color: black;
 }
+#prazno{
+	margin-top: 300px;
+	width: 100%;
+	height: 20%;
+	background-color: wheat;
+}
 #offer{
-	background-color: #EEEEEE;
+	background-color:var(--bckgrd);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -137,123 +145,89 @@ nav ul li a:hover{
 }
 #offers{
 	width: 80%;
-	height: 600px;
-	background-color: #EEEEEE;
+	height: 470px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 .offer{
-	/* background-image: radial-gradient(rgb(255, 255, 255),rgb(233, 155, 37),rgb(255,255,255)); */
+	display: flex;
+	align-items: center;
+    justify-content: center;
 	box-shadow: 6px 3px 7px 0 rgba(0,0,0,0.7);
 	border:1px solid grey;
 	border-radius: 5px 60px;
 	text-align: center;
-	font-size: 31px;
+	font-size: 27px;
 	padding:10px 25px;
 	width: 600px;
-	height: 450px;
+	height: 350px;
 	z-index: 2;
-	background-color: #068FFF;
-
+	background-color:var(--bckgrd);
+	justify-content: space-between;
+	
 }
-
 .offer h3{
+	width: 100%;
 	text-shadow: 2px 1px rgb(100, 100, 100);
 	font-size: 45px;
-	margin-top: -35px;
+	margin-bottom: 25px;
 }
 .food{
 	position: relative;
 	border: 1px solid grey;
 	box-shadow: 0 0 2px 0 black;
 	border-radius: 150px;
-	width: 300px;
-	height: 300px;
+	width: 290px;
+	height: 290px;
 	background-image: url(../assets/food2.jpg);
 	background-repeat:no-repeat;
 	background-size: 500px;
 	background-position:-135px;
-	margin-top: 30px;
 }
 .food2{
 	background-image: url(../assets/gym.jpg);
 	background-size: 314px;
 	background-position:-5px;
 }
-.offer-wrap{
-	display: flex;
-	justify-content: space-between;
-}
-/* .offer-wrap p{
-	margin-top: 20px;
-} */
-.text2{
-	margin-top: -40px;
-}
 .offer-text{
+	width: 280px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 300px;
-	margin-top: 40px;
+	justify-content: center;
 }
 
-.offer button{
+.offer-text a{
+	color:black;
 	width: fit-content;
-	margin-top: 20px;
-	padding:10px 18px;
-	background-image: linear-gradient(rgb(201, 201, 201),#068FFF);
-	border: 2px solid rgb(66, 66, 66);
-	border-radius: 15px;
+	margin-top: 22px;
+	padding:6px 17px;
+	/* background-color: var(--primary); */
+	/* border: 1px solid rgba(66, 66, 66, 0.267); */
+	border-radius: 12px;
 	transition:all 0.5s;
 }
-.offer button:hover{
-	background-image: linear-gradient(rgb(83, 83, 83),rgb(146, 98, 25));
-	border: 2px solid rgb(27, 27, 27);
+.offer-text a:hover{
+	background-color: var(--primary);
+	/* border: 1px solid rgb(90, 90, 90), 0.664); */
 	cursor: pointer;
 	 
-}
-.offer button > a{
-	color: black;
-	font-weight: bold;
-	font-size: 25px;
-	text-transform: uppercase;
-}
-.offer button > a:hover{
-	color: rgb(214, 214, 214);
-}
-#offer1 #offer2{
-	position: absolute;
-}
-
-.best{
-	width: 160px;
-	height: 40px;
-	position: relative;
-	background-color: #4E4FEB;
-	box-shadow: 3px 1px 2px #000;
-	padding: 5px 0px;
-	border-radius: 5px 10px 15px 20px;
-	top: -30px;	
-}
-.best > p{
-	padding-top: 4px;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 30px;
 }
 #plans > h2{
 	text-align: center;
 	font-size: 55px;
 	justify-content: center;
-	margin: 15px 0px;
+	margin-bottom: 20px;
 }
 #plans{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--bckgrd);
+
 }
 #plans-wrap{
 	width: 70%;
@@ -264,10 +238,9 @@ nav ul li a:hover{
 	display: flex;
 	width: 100%;
 	height: 200px;
-	/* border: 1px solid black; */
 	border-radius: 20px;
 	margin-bottom: 15px;
-	background-color: #EEEEEE;
+	background-color: #c9c9c963;
 	justify-content: space-between;
 }
 .plan-img{
@@ -304,9 +277,20 @@ nav ul li a:hover{
 	text-align: center;
 	justify-content: space-evenly;
 }
+#form{
+	width: 100%;
+	height: 550px;
+}
 
-#footer{
+h1, h2{
+	color:var(--primary);
+	text-shadow: 2px 1px 2px #1b1b1b;
+}
+footer{
 	width: 100%;
 	height: 170px;
 	background-color: #4E4FEB;
+}
+footer p{
+	font-size: 26px;
 }
