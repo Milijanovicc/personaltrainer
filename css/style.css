@@ -3,7 +3,7 @@
 :root{
 	--primary:rgba(250, 214, 67,0.88);
 	--bckgrd:rgba(180, 180, 180, 0.19);
-	--second:rgba(214, 214, 214, 0.493);
+	--second:rgba(148, 148, 148, 0.822);
 }
 *{
 	margin:0px;
@@ -16,7 +16,7 @@ a{
 	text-decoration: none;
 }
 body{
-	background-image: url(../assets/background2.png);
+	background-image: url(../assets/background5.png);
 	background-size: 1920px;
 	background-repeat: repeat-y;
 }
@@ -26,13 +26,6 @@ body > hr{
 #wrap{
 	width: 100%;
 	position: relative;
-}
-#wrap-head{
-	width: 100%;
-	height: 100px;
-	background-color: black;
-	display: flex;
-	justify-content: center;
 }
 #header{
 	position: fixed;
@@ -73,8 +66,11 @@ header nav ul li a:hover{
 }
 #background{
 	width: 100%;
-	height: 920px;
-	background-image: url(../assets/background.png);
+	height: 935px;
+	background-image: url(../assets/background3.png);
+	background-size: 1920px;
+	background-position-y: 100px;
+	background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -87,14 +83,24 @@ header nav ul li a:hover{
 	height: 100%;
 }
 #main{
-	width: 50%;
+	width: 42%;
 	height: 500px;
+	margin-top: 200px;
+	margin-left: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	margin-left: 75px;
-	position: relative;
+}
+#main h1, #main span, #main a{
+	animation: slide 1.2s;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 #main h1,span{
 	display: block;
@@ -105,6 +111,7 @@ header nav ul li a:hover{
 	color:rgb(255, 255, 255);
 	margin-bottom: 15px;
 	font-weight: bold;
+	text-align: center;
 }
 #main h1{
 	color: var(--primary);
@@ -131,10 +138,8 @@ header nav ul li a:hover{
 	transform: scale(1.02,1.02);
 }
 #empty{
-	margin-top: 300px;
+	margin-top: 264px;
 	width: 100%;
-	height: 20%;
-	background-color: wheat;
 }
 #offer{
 	background-color:var(--bckgrd);
@@ -147,9 +152,12 @@ header nav ul li a:hover{
 h2{
 	text-align: center;
 	justify-content: center;
-	padding-top: 20px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	font-size: 45px;
+	/* background-color: var(--second); */
+	width: max-content;
+	margin: 0px auto;
 }
 .main-results{
 	width: 100%;
@@ -205,6 +213,10 @@ h2{
 	width: 70%;
 	font-size: 26px;
 	text-align: center;
+	/* background-color: var(--second); */
+	border-radius: 40px;
+	padding: 0px 20px;
+	text-shadow: 3px 3px 1px rgb(161, 161, 161);
 }
 #offers{
 	width: 80%;
@@ -370,7 +382,7 @@ form{
 	display: flex;
 	justify-content: center;
 	box-shadow: 2px 2px 8px black inset;
-	background-color: rgba(170, 170, 170, 0.479);
+	background-color: rgba(185, 185, 185, 0.712);
 }
 .radio-input p{
 	margin-bottom: 9px;
@@ -388,6 +400,7 @@ label[for="male"], label[for="female"]{
 	margin-bottom: 6px;
 	border-radius: 9px;
 	border: 0px;
+	background-color: rgba(233, 233, 233, 0.7);
 }
 .input-box-date{
 	width: 225px;
@@ -395,6 +408,7 @@ label[for="male"], label[for="female"]{
 	border-radius: 9px;
 	border: 0px;
 	padding-left: 6px;
+	background-color: rgba(233, 233, 233, 0.7);
 }
 textarea{
 	width: 98%;
@@ -405,6 +419,7 @@ textarea{
 	border-radius: 10px;
 	border: 0px;
 	margin-bottom: 10px;
+	background-color: rgba(233, 233, 233, 0.7);
 }
 .buttons{
 
@@ -439,7 +454,7 @@ textarea{
 
 h1, h2{
 	color:var(--primary);
-	text-shadow: 3px 2px 6px #000000;
+	text-shadow: 5px 4px 3px #000000;
 }
 footer{
 	width: 100%;
@@ -478,4 +493,11 @@ footer nav{
 	color: rgb(255, 255, 255);
 	transition: 0.8s color;
 	border: 2px solid rgba(0, 0, 0, 0);
+}
+
+/* gallery */
+
+.gallery{
+	width: 100%;
+	height: 950px;
 }
