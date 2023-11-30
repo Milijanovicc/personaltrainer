@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>JIM</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="icon" type="image/png" href="assets/logowhite.png"/>
+		<script src="https://kit.fontawesome.com/23e9d7b2d6.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header id="wrap-head">
 			<div id="header">
-				<div id="logo">
+				<div class="logo">
 					<a href="index.html">
 						<img src="assets/logowhite.png" alt="logo"/>
 					</a>
@@ -17,7 +20,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="#here">Programs</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="index.html#contact-here">Contact us</a></li>
+						<li><a href="index.html#contact">Contact us</a></li>
 						<li><a href="about.html">About</a></li>
 					</ul>
 				</nav>
@@ -29,43 +32,60 @@
 					<h1>Empower your body</h1>
 					<span>Unleash the potential within</span>
 					<span>Your journey begins here</span>
-					<a href="#prazno">Start your journey</a>
+					<a href="#empty">Start your journey</a>
 					<div id="empty"></div>
 				</div>
 			</div>
 		</div>
 		<div id="offer">
 			<h2>What we offer</h2>
-			<p>Achieve your fitness goals with our personal trainer services. 
-				Our certified trainers create custom plans for weight loss, 
-				muscle building, or overall fitness. Get ready for a tailored 
-				journey to a healthier, better you!</p>
+			<p>Achieve your fitness goals with our personal trainer services. Our certified trainers create custom plans for weight loss, muscle building, or overall fitness. Get ready for a tailored journey to a healthier, better you!
+			</p>
 			<div id="offers">
 				<div id="offer1" class="offer">
 					<div class="food"></div>
 					<div class="offer-text">
 						<h3>Quick meal plan</h3>
-						<p>Revamp your nutrition with our personalized meal plan,
-							designed for your tastes and fitness goals. 
-							Let's make healthy eating easy and enjoyable on your fitness
-							journey!
-						</p>
-						<a href="#here" id="here">Details</a>
+						<p>Revamp your nutrition with our personalized meal plan, designed for your tastes and fitness goals. Let's make healthy eating easy and enjoyable on your fitnessjourney!</p>
+						<a href="#contact">Get</a>
 					</div>
 				</div>
 				<div id="offer2" class="offer">
 					<div class="food food2"></div>
 					<div class="offer-text text2">
 						<h3>Workout plan</h3>
-						<p>Elevate your fitness with our exclusive deal!
-							Enjoy personalized training, expert nutrition guidance,
-							all at a discounted rate. Invest in your well-being today!
-						</p>
-						<a href="#here">Details</a>
+						<p>Elevate your fitness with our exclusive deal!Enjoy personalized training, expert nutrition guidance, all at a discounted rate. Invest in your well-being today!</p>
+						<a href="#contact">Get</a>
 					</div>
 				</div>
 			</div>
+			<div class="main-results">
+				<h2>Some of the progress we made</h2>
+				<div class="results">
+					<div class="result1 result">
+						<div class="progress-img"></div>
+						<div class="progress-text">
+							<p>"Your accomplishment is not just physical; it's a demonstration of resilience, discipline, and the ability to conquer self-imposed limitations."</p>
+						</div>
+					</div>
+					<div class="result2 result">
+						<div class="progress-img"></div>
+						<div class="progress-text">
+							<p>"Keep pushing boundaries and relishing the journey toward your best self."</p>
+						</div>
+					</div>
+					<div class="result3 result">
+						<div class="progress-img"></div>
+						<div class="progress-text">
+							<p>"In the gym, each accomplished goal is a testament to your dedication and strength."</p>
+						</div>
+						<div id="here"></div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
+		<hr/>
 		<div id="plans">
 			<h2>Choose the training that suits you</h2>
 			<div id="plans-wrap">
@@ -73,10 +93,7 @@
 					<div class="plan-img" id="img1"></div>
 					<div class="plan-text">
 						<h4>Keep your life healty</h4>
-						<p>A healthy lifestyle during training involves a balanced diet,
-							staying hydrated, prioritizing rest, incorporating varied exercises,
-							and practicing mindfulness.  Consistency in these habits is crucial
-							for sustained success in your training regimen.
+						<p>A healthy lifestyle during training involves a balanced diet, staying hydrated, prioritizing rest, incorporating varied exercises, and practicing mindfulness. Consistency in these habits is crucial for sustained success in your training regimen.
 						</p>
 					</div>
 				</div>
@@ -84,12 +101,7 @@
 					<div class="plan-img" id="img2"></div>
 					<div class="plan-text">
 						<h4>Better performance</h4>
-						<p>Maximize your athletic potential with our sports-specific
-							performance training. Tailored for your sport, 
-							our program hones agility, speed, strength, and endurance.
-							Whether you're a seasoned athlete or just starting,
-							our expert trainers create targeted exercises to optimize 
-							your performance
+						<p>Maximize your athletic potential with our sports-specific performance training. Tailored for your sport, our program hones agility, speed, strength, and endurance. Whether you're a seasoned athlete or just starting, our expert trainers create targeted exercises to optimize your performance
 						</p>
 					</div>
 				</div>
@@ -97,20 +109,23 @@
 					<div class="plan-img" id="img3"></div>
 					<div class="plan-text">
 						<h4 id="contact-here">Build muscle</h4>
-						<p>Build muscle and sculpt your physique at our gym.
-							Our program combines effective resistance exercises and expert 
-							guidance to optimize muscle growth. Whether you're a beginner or experienced, 
-							our tailored approach, focused on proper form and intensity,
-							helps you achieve the strength and confidence you desire.
+						<p>Build muscle and sculpt your physique at our gym. Our program combines effective resistance exercises and expert guidance to optimize muscle growth. Whether you're a beginner or experienced, our tailored approach, focused on proper form and intensity, helps you achieve the strength and confidence you desire.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+		<hr/>
 		<div id="contact">
 			<h2>Contact us</h2>
 			<form>
 				<div class="contact-wrap">
+					<div class="contact-text">
+						<div class="contact-text">
+							<p>Contact us or schedule a program</p>
+							<hr/>
+						</div>
+					</div>
 					<div class="input-wrap">
 						<div class="text-input">
 							<label for="fullName">Full name:</label>
@@ -125,13 +140,13 @@
 						<div class="radio-input">
 							<p>Gender:</p>
 							<label for="male">Male</label>
-							<input type="radio" id="male" value="male" name="sex" required="required" />
+							<input type="radio" id="male" value="male" name="sex" />
 							<label for="female">Female</label>
 							<input type="radio" id="female" value="female" name="sex" />
 						</div>
 						<div class="text-input">
 							<label for="age">Age:</label>
-							<input type="number" class="input-box" id="age" placeholder="16+" value="age" min="16" required="required"/>
+							<input type="number" class="input-box" id="age" placeholder="16+" min="16" />
 						</div>
 					</div>
 					<div class="input-wrap">
@@ -142,24 +157,60 @@
 								<option value="health">Healthy life</option>
 								<option value="performance">Performance plan</option>
 								<option value="muscle">Building muscle plan</option>
+								<option value="meal">Quick meal plan</option>
+								<option value="meal">Quick workout plan</option>
 							</select>
 						</div>
 						<div class="date-input">
 							<label for="date-input">Starting date:</label>
-							<input type="date" id="start-date" class="input-box-date" name="start-date" value="2023-11-30" min="2023-11-30" max="2024-06-16" />
+							<input type="date" id="date-input" class="input-box-date" name="start-date" value="2023-11-30" min="2023-11-30" max="2024-06-16" />
 						</div>
 					</div>
-					<textarea></textarea>
-					<!-- <div class="submit-input">
-						<input type="submit" id="submit" value="submit" name="Send a request" min="11-30-2023"/>
-					</div> -->
+					<p>Tell us more:</p>
+					<textarea id=""></textarea>
+					<div class="buttons">
+						<input type="submit" class="button" id="submit" value="submit" name="Send"/>
+						<input type="reset" class="button" id="reset" value="reset" name="Send"/>
+					</div>
 				</div>
 			</form>
 		</div>
 		<footer>
-			<p>
-			&copy; Stefan Milijanoivc
-			</p>
+			<div class="footer-wrap">
+				<div class="footer-nav">
+					<div class="logo">
+						<a href="index.html">
+							<img src="assets/logowhite.png" alt="logo"/>
+						</a>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#here">Programs</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="index.html#contact">Contact us</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</nav>
+				</div>
+				<p>&copy; Stefan Milijanoivc</p>
+				<div class="footer-links">
+					<ul class="link-wrap">
+						<li>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>Instagram</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa-solid fa-square-rss"></i>RSS</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa-solid fa-sitemap"></i>Sitemap</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</footer>
 	</body>
-</html>
+</html>	
