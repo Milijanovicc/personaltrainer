@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+    <title>Notifications</title>
+    <link>https://milijanovicc.github.io/personaltrainer/index.html</link>
+    <description>What's new on JIM.</description>
+    <item>
+        <title>New content in our gallery</title>
+        <link>https://milijanovicc.github.io/personaltrainer/gallery.html</link>
+        <description>New pictures are on!</description>
+    </item>
+    </channel>
+</rss>
