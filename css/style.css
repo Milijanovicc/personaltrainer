@@ -16,9 +16,10 @@ a{
 	text-decoration: none;
 }
 body{
-	background-image: url(../assets/background2.jpg);
+	background-image: url(../assets/bck.jpg);
 	background-size: 1920px;
 	background-repeat: repeat-y;
+	background-position-y: 934px;
 }
 body > hr{
 	box-shadow: 0px 1px 3px;
